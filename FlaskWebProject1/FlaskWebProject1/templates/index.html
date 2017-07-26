@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+
+{% block content %}
+{{token}}
+Input:
+<form action="{{ url_for('handle_data') }}" method="post">
+    <input type="text" name="userName" value="Amitay">
+    <p><input style="width:2000px;" type="text" name="query" value="Hi Ran, do you want to eat lunch tomorrow at 12:00 in Zozobra?Yes, Oren will also be here tomorrow, let's invite him too."></p>
+    <input type="submit">
+    <input type="hidden" name="token" value={{token}} >
+</form>
+<!--p><input type="text" id="Input" value="Your schedualing here"></p>
+
+<a href="/my-link/">Go Cortana</a-->
+
+<p>Output: </p>
+<pre id="json">{{ message }}</pre>
+
+{% endblock %}

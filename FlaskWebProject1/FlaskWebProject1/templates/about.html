@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+
+Answer:
+<pre id="json">{{ message }}</pre>
+<a href="/my-link/">Go Cortana</a>
+
+<!--script>
+    document.getElementById("json").innerHTML = JSON.stringify({{ message }}, undefined, 2);
+</script-->
+
+{% endblock %}
