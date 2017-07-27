@@ -41,9 +41,13 @@
     <Folder Include="FlaskWebProject1\static\fonts\" />
     <Folder Include="FlaskWebProject1\static\scripts\" />
     <Folder Include="FlaskWebProject1\templates\" />
+    <Folder Include="Metadata\" />
+    <Folder Include="Metadata\deploymentTemplates\" />
     <Folder Include="Release\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="apiapp.json" />
+    <Content Include="Metadata\deploymentTemplates\apiappconfig.azureresource.json" />
     <Content Include="model.dat" />
     <Content Include="people.json" />
     <Content Include="Release\ConsoleApplication1.exe" />

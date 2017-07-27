@@ -1,13 +1,23 @@
-{% extends "layout.html" %}
 
 {% block content %}
-{{token}}
 Input:
 <form action="{{ url_for('handle_data') }}" method="post">
-    <input type="text" name="userName" value="Amitay">
-    <p><input style="width:2000px;" type="text" name="query" value="Hi Ran, do you want to eat lunch tomorrow at 12:00 in Zozobra?Yes, Oren will also be here tomorrow, let's invite him too."></p>
-    <input type="submit">
-    <input type="hidden" name="token" value={{token}} >
+    <p>
+        <label for="userName">Talking with:</label>
+        <input type="text" name="userName" id="userName" placeholder="Amitay">
+    </p>
+    <p>
+        <label for="question">His sentence:</label>
+        <input style="width: 800px;" type="text" id="question" name="query1" placeholder="Hi Ran, do you want to eat lunch tomorrow at 12:00 in Zozobra?">
+    </p>
+    <p>
+        <label for="answer">Your sentence:</label>
+        <input style="width: 800px;" type="text" id="answer" name="query2" placeholder="Yes, Oren will also be here tomorrow, let's invite him too.">
+    </p>
+    <p>
+        <input type="submit">
+    </p>
+        <input type="hidden" name="token" value={{token}}>
 </form>
 <!--p><input type="text" id="Input" value="Your schedualing here"></p>
 

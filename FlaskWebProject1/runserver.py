@@ -19,7 +19,7 @@ def handle_data():
 	from flask import request
 	userName = request.form['userName']
 	print userName
-	query = request.form['query']
+	query = request.form['query1']+ " " + request.form['query2']
 	print query
 	token = request.form['token'] 
 	print token
